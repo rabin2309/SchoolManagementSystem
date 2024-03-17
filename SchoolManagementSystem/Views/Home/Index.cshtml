@@ -1,0 +1,30 @@
+﻿@{
+
+    ViewData["Title"] = "Home Page";
+
+}
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-lg-2">
+    <div class="col">
+        <div class="card h-80">
+            <img src="https://t3.ftcdn.net/jpg/05/22/64/54/360_F_522645436_Fby552W2jVPQGLunxN8pIUOaHg9pMrAV.jpg" alt="..."> <div class="card-footer">
+                <a href="@Url.Action("TeacherList", "Teacher")" class="btn btn-primary mt-2">Teachers</a>
+
+            </div>
+        </div>
+    </div> <div class="col">
+        <div class="card h-80">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV80X2N1dGVfM2RfaWxsdXN0cmF0aW9uX29mX2FfeW91bmdfYmxhY2tfZmVtYWxlX182YTQ5MzJkMi00NmU2LTRhY2UtYmRkOS05MDA3YjkyMmFhODZfMi5wbmc.png" alt="..."> <div class="card-footer">
+                <a href="@Url.Action("StudentList", "Student")" class="btn btn-primary mt-2">Students</a>
+
+            </div>
+        </div>
+    </div> <div class="col">
+        <div class="card h-80">
+            <img src="https://img.freepik.com/free-vector/interior-classroom_1308-26552.jpg?w=900&t=st=1710642769~exp=1710643369~hmac=893de971742e18705b7857e289603ee138ceb83fac1c695c34c923bdb8bf68ad" alt="..."> <div class="card-footer">
+                <a href="@Url.Action("ClassesList", "Classes")" class="btn btn-primary mt-2">Classes</a>
+
+            </div>
+        </div>
+    </div>
+</div>

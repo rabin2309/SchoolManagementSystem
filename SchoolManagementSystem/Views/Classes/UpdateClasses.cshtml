@@ -1,0 +1,28 @@
+﻿@model SchoolManagementSystem.Models.ViewModels.ClassesViewModels.UpdateClassesViewModel;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Update Class";
+}
+<h2 class="my-4">Update Class</h2>
+
+@using (Html.BeginForm("UpdateClasses", "Classes", FormMethod.Post, new { @class = "needs-validation", enctype = "multipart/form-data", novalidate = "novalidate" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.ClassesId)
+
+    <div class="form-group mb-3 w-25">
+        @Html.LabelFor(model => model.Name, new { @class = "form-label" })
+        @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "Name" })
+        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+    </div>
+
+
+
+    <div class="form-group mb-3 col-3">
+        @Html.LabelFor(model => model.Section, new { @class = "form-label" })
+        @Html.TextBoxFor(model => model.Section, new { @class = "form-control", placeholder = "ImgUrl" })
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Update Class</button>
+}
